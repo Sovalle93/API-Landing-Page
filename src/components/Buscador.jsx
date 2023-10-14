@@ -16,11 +16,11 @@ const Buscador = () => {
     return (
         <>
             <section className='filter'>
-                <h1>Lista de Juegos</h1>
+                <h2>Lista de Juegos</h2>
                 <input
                     name="juego"
                     className='search'
-                    placeholder="Buscar un juego"
+                    placeholder="Buscar juegos"
                     value={buscarJuego}
                     onChange={handleSearchInput}
                 />

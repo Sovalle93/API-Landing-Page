@@ -4,7 +4,7 @@ function Header() {
     return (
     <header>
         <h1>
-            <i className="fa-solid fa-dragon"></i>
+            <img className='epic' src='https://www.svgrepo.com/show/424895/logo-play-epic-games.svg'></img>
             <span>EPIC GAMES STORE</span>
         </h1>
     </header>

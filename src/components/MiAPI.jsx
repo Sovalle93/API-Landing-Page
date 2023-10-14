@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Card from 'react-bootstrap/Card';
 
 function MiApi({ searchTerm, ordenAscendente }) {
     const [info, setInfo] = useState([]);
@@ -52,11 +53,11 @@ function MiApi({ searchTerm, ordenAscendente }) {
     return (
         <section className='gamegallery'>
             {filteredInfo.map((item, index) => (
-                <div key={index}>
-                    <img src={item.keyImage} alt={item.gameTitle} />
-                    <p>{item.gameTitle}</p>
-                    <p>Seller: {item.seller}</p>
-                </div>
+                <Card key={index}>
+                    <Card.Img className="cards" src={item.keyImage} alt={item.gameTitle} />
+                    <Card.Title>{item.gameTitle}</Card.Title>
+                    <Card.Text>Seller: {item.seller}</Card.Text>
+                </Card>
             ))}
         </section>
     );
