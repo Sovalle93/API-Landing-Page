@@ -26,10 +26,10 @@ function MiApi({ searchTerm, ordenAscendente }) {
                         keyImage: item.keyImages[0].url 
                     })));
                 } else {
-                    console.error('Data format is not as expected:', data);
+                    console.error('Formato no esta correcto:', data);
                 }
             } catch (error) {
-                console.error('There was an error in the procedure:', error.message);
+                console.error('Hubo un error en el procedimiento:', error.message);
             }
         };
 
